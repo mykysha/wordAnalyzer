@@ -1,6 +1,6 @@
 # Word Analyzer
 
-This application is used to find which words in the list contain only English vowels.
+This application is used to find which words in the list contain only vowels.
 
 ## Run Locally (not recommended because you would have to use Java)
 

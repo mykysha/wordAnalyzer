@@ -20,14 +20,14 @@ public class Main {
         HashSet<String> printedWords = new HashSet<>();
 
         for (String word : words) {
-            if (!WordAnalyzer.CheckIfOnlyEnglishVowels(word)) {
+            if (printedWords.contains(word)) {
                 continue;
             }
 
-            if (!printedWords.contains(word)) {
-                printedWords.add(word);
-
+            if (WordAnalyzer.CheckIfOnlyEnglishVowels(word)) {
                 System.out.println(word);
+
+                printedWords.add(word);
             }
         }
     }
